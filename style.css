@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.converter-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.converter-section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    justify-content: center;
+}
+
+.converter input {
+    padding: 12px 20px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.converter input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.converter button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 30px;
+    display: none;
+}
+
+.result h3 {
+    color: #2c3e50;
+}
+
+#ip-address {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #e3e3e3;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .converter-section {
+        padding: 20px;
+    }
+
+    .converter input, .converter button {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cool Domain to IP Converter. Easily convert domain names to IP addresses.">
+    <meta name="keywords" content="Domain, IP, convert, lookup, domain to IP tool">
+    <title>Cool Domain to IP Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Domain to IP Converter</h1>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="converter-section">
+            <h2>Convert Your Domain to IP</h2>
+            <div class="converter">
+                <input type="text" id="domain" placeholder="Enter a domain (e.g., stacy.xyz)">
+                <button onclick="convertDomain()">Convert</button>
+            </div>
+            <div id="loading-spinner" class="loading-spinner"></div>
+            <div class="result" id="result-container">
+                <h3>IP Address:</h3>
+                <p id="ip-address">N/A</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Cool Domain to IP Converter | Made with 💗 by oxyzox</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
