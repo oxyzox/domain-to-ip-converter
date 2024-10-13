@@ -43,7 +43,7 @@ To set up the project locally:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/YOUR-USERNAME/domain-to-ip-converter.git
+    git clone https://github.com/oxyzox/domain-to-ip-converter.git
     cd domain-to-ip-converter
     ```
 
